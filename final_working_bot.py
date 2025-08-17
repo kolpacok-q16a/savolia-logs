@@ -35,14 +35,8 @@ maintenance_mode = False
 app = Flask(__name__)
 CORS(app)
 
-# Создаем бота с connection pool настройками
-bot = Bot(
-    token=BOT_TOKEN,
-    pool_timeout=20,
-    connect_timeout=10,
-    read_timeout=10,
-    write_timeout=10
-)
+# Создаем бота
+bot = Bot(token=BOT_TOKEN)
 
 class SystemMonitor:
     @staticmethod

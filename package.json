@@ -1,0 +1,23 @@
+{
+  "name": "savolia-error-logger",
+  "version": "1.0.0",
+  "description": "Бот для логирования ошибок из всех платформ Savolia",
+  "main": "error-logger-bot.js",
+  "scripts": {
+    "start": "node error-logger-bot.js",
+    "dev": "nodemon error-logger-bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "moment": "^2.29.4",
+    "ua-parser-js": "^1.0.37"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": ["telegram", "bot", "error-logging", "savolia"],
+  "author": "Savolia Team",
+  "license": "MIT"
+}
